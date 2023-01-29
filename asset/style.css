@@ -3,6 +3,7 @@
 ** Tweak as per your needs **
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .wrapper {
   max-width: 1140px;
   padding-left: 1rem;
@@ -10,9 +11,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 body {
-    background-color: #452F10;
+  background-color: #452F10;
 }
+
 *,
 *:before,
 *:after {
@@ -45,8 +48,8 @@ body {
 
 .button {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #fff;
   background-color: #2fa0f6;
   min-width: 120px;
@@ -77,66 +80,168 @@ body {
   min-width: initial;
   padding: 0.5rem;
 }
- 
+
 
 /* nav bar */
 /* header, a {
     color: #B07630;
 } */
 .brand {
-    font-weight: bold;
-    font-size: 20px; }
-  
-  .site-header {
-    position: relative;
-    background-color: #DED7B0; }
-  
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.site-header {
+  position: relative;
+  background-color: #DED7B0;
+}
+
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
   .site-header__wrapper {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-    @media (min-width: 600px) {
-      .site-header__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 0;
-        padding-bottom: 0; } }
-  @media (min-width: 600px) {
-    .nav__wrapper {
-      display: flex; } }
-  
-  @media (max-width: 599px) {
-    .nav__wrapper {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      left: 0;
-      z-index: -1;
-      background-color: #d9f0f7;
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
-      .nav__wrapper.active {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0); } }
-  
-  .nav__item a {
-    display: block;
-    padding: 1.5rem 1rem;
-    
- }
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav__item a {
+  display: block;
+  padding: 1.5rem 1rem;
+
+}
+
+.nav__toggle {
+  display: none;
+}
+
+@media (max-width: 599px) {
   .nav__toggle {
-    display: none; }
-    @media (max-width: 599px) {
-      .nav__toggle {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem; } }
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+
+.banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+ 
+}
+
+.banner h1 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-weight: 50%;
+
   
+}
+
+.banner p {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
 
 
-/*end nav */
+@media screen and (min-width: 767px) {
+  .banner {
+    padding: 0 150px;
+  }
+
+  .banner h1 {
+    font-size: 5rem;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 25px;
+  border-radius: 4px;
+  margin-left: 5%;
+}
+.button-primary {
+  position: relative;
+  background-color: #497228;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: color 0.3s ease-in;
+  z-index: 1;
+}
+.button-primary:hover {
+  color: #497228;
+  text-decoration: none;
+}
+.button-primary::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transform: scaleX(0.8);
+  -ms-transform: scaleX(0.8);
+  transform: scaleX(0.8);
+  transition: all 0.3s ease-in;
+  z-index: -1;
+}
+.button-primary:hover::after {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+  /*end nav */
+
+form {
+  margin-top: 20px;
+}
