@@ -171,13 +171,16 @@ color: #DDD7B3;
 }
 
 
-input[type=text] {
+.userName [type ="text"]{
   position: absolute;
 width: 826px;
 height: 54px;
 left: calc(50% - 826px/2 + 7px);
 top: 40px;
 background: #DDD7B3;
+box-shadow: 0;
+border: none;
+border-radius: 10px;
 
 font-family: 'Segoe UI';
 font-style: normal;
@@ -185,7 +188,57 @@ font-weight: 400;
 font-size: 24px;
 line-height: 32px;
 text-align: justify;
+text-decoration-color: #422F15;
+text-indent: 10px;
 
-color: #422F15
+}
+
+.Password [type ="password"]{
+  position: absolute;
+width: 826px;
+height: 54px;
+left: calc(50% - 826px/2 + 7px);
+top: 120px;
+background: #DDD7B3;
+box-shadow: 0;
+border: none;
+border-radius: 10px;
+
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+text-align: justify;
+text-decoration-color: #422F15;
+text-indent: 10px;
+
+}
+
+.Submit{
+  position: absolute;
+width: 96px;
+height: 28px;
+left: calc(50% - 96px/2 + 372px);
+top: 565px;
+
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+
+color: #DDD7B3;
+
+
+position: absolute;
+width: 120px;
+height: 36px;
+left: calc(50% - 120px/2 + 360px);
+top: 190px;
+
+background: #A7783D;
+border-radius: 20px;
+border : none;
 
 }
