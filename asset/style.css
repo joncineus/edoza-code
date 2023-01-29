@@ -140,3 +140,52 @@ body {
 
 
 /*end nav */
+
+.title1 
+{
+  position: absolute;
+width: 551px;
+height: 98px;
+left: calc(50% - 551px/2 + 174.5px);
+top: 150px;
+
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 78px;
+line-height: 104px;
+
+color: #DDD7B3;
+
+}
+
+.loginBox
+{
+  position: absolute;
+  width: 882px;
+  height: 268px;
+  left: calc(50% - 882px/2 + 9px);
+  top: 260px;
+  background: #497228;
+  border-radius: 20px;
+}
+
+
+input[type=text] {
+  position: absolute;
+width: 826px;
+height: 54px;
+left: calc(50% - 826px/2 + 7px);
+top: 40px;
+background: #DDD7B3;
+
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+text-align: justify;
+
+color: #422F15
+
+}
